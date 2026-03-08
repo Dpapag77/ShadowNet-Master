@@ -1,9 +1,53 @@
-🛰️ ShadowNet Master: Predictive Cloud ReconnaissanceShadowNet is an advanced infrastructure scouting framework designed for Kali Linux. It moves beyond standard scanners by using Architectural Prediction to find "Shadow Infrastructure"—unclaimed cloud assets that lead to Subdomain Takeovers.🚀 The A to Z of ShadowNetThis tool operates in a multi-phase workflow to ensure 100% coverage of a target's cloud footprint:Phase A-C (The Scout): Identifies cloud storage buckets (AWS, Azure, Google) and maps their permissions.Phase D (The Architect): Uses custom pattern-guessing to find hidden dev, test, and staging environments that aren't linked anywhere.Phase E (The Whisperer): Detects "Ghost" signatures (NoSuchBucket), alerting the researcher to potential takeovers.Phase G (Deep Crawler): Recursively analyzes internal HTML to find cloud references buried deep in the site map.Phase H (Bounty Hunter): Automatically locates security.txt and disclosure policies for ethical reporting.🏆 Proof of ConceptDuring its first live deployment, ShadowNet successfully identified an unclaimed staging environment for a major cloud provider (dropbox-staging.s3.amazonaws.com), leading to a professional vulnerability disclosure.🛠️ Installation# Clone the repository
-git clone [https://github.com/Dpapag77/ShadowNet-Master.git](https://github.com/Dpapag77/ShadowNet-Master.git)
-cd ShadowNet-Master
+# 🛰️ ShadowNet Master
+### Predictive Cloud Reconnaissance Framework
 
-# Install dependencies
+ShadowNet is a professional-grade scouting tool for Kali Linux. It identifies "Shadow Infrastructure" by predicting hidden cloud assets that lead to Subdomain Takeovers.
+
+---
+
+## 🚀 The Mission (A-Z Workflow)
+
+**Phase A-C: The Scout** Identifies cloud storage buckets (AWS, Azure, Google) and maps their permissions.
+
+**Phase D: The Architect** Uses pattern-guessing to find hidden dev, test, and staging environments.
+
+**Phase E: The Whisperer** Detects "Ghost" signatures (NoSuchBucket), identifying prime takeover targets.
+
+**Phase G: Deep Crawler** Recursively analyzes site maps to find buried cloud references.
+
+**Phase H: Bounty Hunter** Locates security.txt and disclosure policies for ethical reporting.
+
+---
+
+## 🏆 Proof of Concept
+
+During its first live deployment, **ShadowNet** successfully identified an unclaimed staging environment for a major cloud provider:
+
+`dropbox-staging.s3.amazonaws.com` 
+
+This discovery led to a professional vulnerability disclosure.
+
+---
+
+## 🛠️ Installation & Usage
+
+### 1. Install Dependencies
+\`\`\`bash
 pip install requests beautifulsoup4
-💻 UsageCommand Line Interface (CLI)For fast, automated reconnaissance:python3 shadow_net_scout.py target.com --pages 20
-Graphical User Interface (GUI)For a visual "Cyber Deck" experience:python3 shadow_gui.py
-⚖️ Legal DisclaimerThis tool is for Ethical Security Research only. The creator is not responsible for any misuse. Always operate within a target's "Safe Harbor" policy.
+\`\`\`
+
+### 2. Run the Scout (CLI)
+\`\`\`bash
+python3 shadow_net_scout.py target.com --pages 20
+\`\`\`
+
+### 3. Run the Dashboard (GUI)
+\`\`\`bash
+python3 shadow_gui.py
+\`\`\`
+
+---
+
+## ⚖️ Legal Disclaimer
+
+This tool is for **Ethical Security Research** only. Always operate within a target's "Safe Harbor" policy.
