@@ -1,6 +1,8 @@
 # 🛰️ ShadowNet Master
 ### Predictive Cloud Reconnaissance Framework
 
+![ShadowNet Dashboard](hero_000.png)
+
 ShadowNet is a professional-grade scouting tool for Kali Linux. It identifies "Shadow Infrastructure" by predicting hidden cloud assets that lead to Subdomain Takeovers.
 
 ---
@@ -13,7 +15,7 @@ ShadowNet is a professional-grade scouting tool for Kali Linux. It identifies "S
 
 **Phase E: The Whisperer** Detects "Ghost" signatures (NoSuchBucket), identifying prime takeover targets.
 
-**Phase G: Deep Crawler** Recursively analyzes site maps to find buried cloud references.
+**Phase G: Deep Crawler** Recursive analysis of site maps to find buried cloud references.
 
 **Phase H: Bounty Hunter** Locates security.txt and disclosure policies for ethical reporting.
 
