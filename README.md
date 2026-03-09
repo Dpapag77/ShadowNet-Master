@@ -1,55 +1,22 @@
-# 🛰️ ShadowNet Master
-### Predictive Cloud Reconnaissance Framework
+# 🛰️ ShadowNet Master v2.0 - Cloud Recon & Bot-Crusher
 
-![ShadowNet Dashboard](hero_000.png)
+ShadowNet Master is a predictive reconnaissance engine designed for identifying "Ghost Assets" (unclaimed cloud resources) and bypassing automated triage filters on platforms like HackerOne.
 
-ShadowNet is a professional-grade scouting tool for Kali Linux. It identifies "Shadow Infrastructure" by predicting hidden cloud assets that lead to Subdomain Takeovers.
+## 🚀 Recent Mission Success: 23andMe
+- **Target:** 23andMe
+- **Vulnerability:** Subdomain Takeover (Dangling CNAME)
+- **Status:** Reported & Open (#3593734)
+- **Tool Used:** Bot-Crusher Evidence Engine
 
----
+## 🛠️ Features
+- **Interrogator Mode:** Deep DNS handshake analysis for AWS S3 bucket identification.
+- **Bot-Crusher Engine:** Automatically generates raw HTTP evidence logs (`x-amz-request-id`, `404 NoSuchBucket`) to satisfy automated security bots.
+- **Predictive Scripting:** Intelligent prefix scanning for staging, dev, and internal cloud footprints.
 
-## 🚀 The Mission (A-Z Workflow)
-
-**Phase A-C: The Scout** Identifies cloud storage buckets (AWS, Azure, Google) and maps their permissions.
-
-**Phase D: The Architect** Uses pattern-guessing to find hidden dev, test, and staging environments.
-
-**Phase E: The Whisperer** Detects "Ghost" signatures (NoSuchBucket), identifying prime takeover targets.
-
-**Phase G: Deep Crawler** Recursive analysis of site maps to find buried cloud references.
-
-**Phase H: Bounty Hunter** Locates security.txt and disclosure policies for ethical reporting.
-
----
-
-## 🏆 Proof of Concept
-
-During its first live deployment, **ShadowNet** successfully identified an unclaimed staging environment for a major cloud provider:
-
-`dropbox-staging.s3.amazonaws.com` 
-
-This discovery led to a professional vulnerability disclosure.
+## 📂 Project Structure
+- `shadow_gui.py`: Primary Cyber-Dashboard with live evidence generation.
+- `shadow_net_scout.py`: Terminal-based stealth recon tool.
+- `Reports/`: Captured evidence logs and technical proof of concepts.
 
 ---
-
-## 🛠️ Installation & Usage
-
-### 1. Install Dependencies
-\`\`\`bash
-pip install requests beautifulsoup4
-\`\`\`
-
-### 2. Run the Scout (CLI)
-\`\`\`bash
-python3 shadow_net_scout.py target.com --pages 20
-\`\`\`
-
-### 3. Run the Dashboard (GUI)
-\`\`\`bash
-python3 shadow_gui.py
-\`\`\`
-
----
-
-## ⚖️ Legal Disclaimer
-
-This tool is for **Ethical Security Research** only. Always operate within a target's "Safe Harbor" policy.
+*Disclaimer: This tool is for authorized security research and bug bounty hunting under Safe Harbor guidelines only.*
